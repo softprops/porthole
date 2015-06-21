@@ -1,7 +1,7 @@
-extern crate port;
+extern crate porthole;
 
 fn main() {
-  for p in port::iter().take(5) {
+  for p in porthole::iter().take(5) {
     println!("{:?}", p);
   }
 }
