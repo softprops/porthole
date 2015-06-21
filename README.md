@@ -2,6 +2,9 @@
 
 > A tiny rust crate for resolving the next available network port
 
+## docs
+
+Find them [here](http://softprops.github.io/porthole)
 
 # usage
 
