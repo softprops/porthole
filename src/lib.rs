@@ -28,6 +28,13 @@ pub fn iter() -> Iter {
   Iter
 }
 
+
 #[test]
-fn it_works() {
+fn resolves_open_ports() {
+  assert_eq!(open().is_ok(), true)
+}
+
+#[test]
+fn provides_iter_over_open_ports() {
+  assert_eq!(iter().take(5).count(), 5)
 }
