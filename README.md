@@ -1,5 +1,7 @@
 # porthole
 
+[![Build Status](https://travis-ci.org/softprops/porthole.svg?branch=master)](https://travis-ci.org/softprops/porthole)
+
 > A tiny rust crate for resolving the next available network port
 
 ## docs
