@@ -5,7 +5,7 @@ use std::iter::Iterator;
 
 /// Returns the next available network port
 /// on the current host
-pub fn next() -> Result<u16> {
+pub fn open() -> Result<u16> {
   TcpListener::bind("0.0.0.0:0")
     .and_then(|l| {
       let addr = l.local_addr();
@@ -20,7 +20,7 @@ pub struct Iter;
 impl Iterator for Iter {
   type Item = u16;
   fn next(&mut self) -> Option<u16> {
-    ::next().ok()
+    ::open().ok()
   }
 }
 
