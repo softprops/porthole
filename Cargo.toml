@@ -2,6 +2,12 @@
 name = "porthole"
 version = "0.1.0"
 authors = ["softprops <d.tangren@gmail.com>"]
+description = "Resolves open network ports"
+documentation = "http://softprops.github.io/porthole"
+homepage = "https://github.com/softprops/porthol"
+repository = "https://github.com/softprops/porthole"
+keywords = ["port", "networking", "unix"]
+license = "MIT"
 
 [[bin]]
 name = "porthold"
