@@ -8,6 +8,15 @@
 
 Find them [here](http://softprops.github.io/porthole)
 
+## install
+
+Add the following to your `Cargo.toml`
+
+```toml
+[dependencies]
+porthole = "0.1.0"
+```
+
 # usage
 
 ```rust
