@@ -1,3 +1,12 @@
+#![deny(missing_docs)]
+
+//! Porthole resolves open network ports so you don't have to.
+//!
+//! # examples
+//!
+//! ```
+//! println!("next available port is {}", porthole::open().unwrap())
+//! ```
 
 use std::net::TcpListener;
 use std::io::Result;
@@ -15,6 +24,7 @@ pub fn open() -> Result<u16> {
     .and_then(|a| Ok(a.port()))
 }
 
+/// An iterator over open ports
 pub struct Iter;
 
 impl Iterator for Iter {
@@ -24,6 +34,7 @@ impl Iterator for Iter {
   }
 }
 
+/// produces an Iter instance to iterate over open ports
 pub fn iter() -> Iter {
   Iter
 }
